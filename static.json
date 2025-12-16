@@ -2,6 +2,70 @@
   "root": "dist",
   "clean_urls": true,
   "routes": {
+    "/assets/*": "/assets/:splat",
+    "/*.png": "/:file",
+    "/*.jpg": "/:file",
+    "/*.jpeg": "/:file",
+    "/*.gif": "/:file",
+    "/*.svg": "/:file",
+    "/*.webp": "/:file",
+    "/*.avif": "/:file",
+    "/*.mp4": "/:file",
+    "/*.webm": "/:file",
+    "/*.woff": "/:file",
+    "/*.woff2": "/:file",
+    "/*.ttf": "/:file",
+    "/*.eot": "/:file",
     "/**": "index.html"
+  },
+  "headers": {
+    "/*.css": {
+      "Content-Type": "text/css; charset=utf-8"
+    },
+    "/*.js": {
+      "Content-Type": "application/javascript; charset=utf-8"
+    },
+    "/*.json": {
+      "Content-Type": "application/json; charset=utf-8"
+    },
+    "/*.woff": {
+      "Content-Type": "font/woff"
+    },
+    "/*.woff2": {
+      "Content-Type": "font/woff2"
+    },
+    "/*.ttf": {
+      "Content-Type": "font/ttf"
+    },
+    "/*.eot": {
+      "Content-Type": "application/vnd.ms-fontobject"
+    },
+    "/*.svg": {
+      "Content-Type": "image/svg+xml"
+    },
+    "/*.png": {
+      "Content-Type": "image/png"
+    },
+    "/*.jpg": {
+      "Content-Type": "image/jpeg"
+    },
+    "/*.jpeg": {
+      "Content-Type": "image/jpeg"
+    },
+    "/*.gif": {
+      "Content-Type": "image/gif"
+    },
+    "/*.webp": {
+      "Content-Type": "image/webp"
+    },
+    "/*.avif": {
+      "Content-Type": "image/avif"
+    },
+    "/*.mp4": {
+      "Content-Type": "video/mp4"
+    },
+    "/*.webm": {
+      "Content-Type": "video/webm"
+    }
   }
 }
