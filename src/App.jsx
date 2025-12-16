@@ -7,6 +7,7 @@ import './App.css';
 
 gsap.registerPlugin(ScrollTrigger);
 import Navbar from './components/Navbar';
+import MobileBlocker from './components/MobileBlocker';
 import HomePage from './pages/HomePage';
 import ShopPage from './pages/ShopPage';
 import FragrancePage from './pages/FragrancePage';
@@ -70,6 +71,7 @@ function App() {
 
   return (
     <div className="App bg-white text-neutral-900">
+      <MobileBlocker />
       <Navbar />
       <Routes>
         <Route path="/" element={<HomePage />} />
